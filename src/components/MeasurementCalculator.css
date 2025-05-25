@@ -104,6 +104,21 @@ h2 {
   background: #e9ecef;
 }
 
+.delete-btn {
+  padding: 0.5rem 1rem;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
 @media (max-width: 768px) {
   .input-section {
     flex-direction: column;

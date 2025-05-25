@@ -39,6 +39,10 @@ const MeasurementCalculator = () => {
     setInput({ width: '', height: '' });
   };
 
+  const handleDelete = (index) => {
+    setRows(rows.filter((_, idx) => idx !== index));
+  };
+
   return (
     <div className="calculator-container">
       <h1>Measurement Calculator</h1>
@@ -81,6 +85,7 @@ const MeasurementCalculator = () => {
                 <th>Col 4</th>
                 <th>Col 5</th>
                 <th>Col 6</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -92,6 +97,9 @@ const MeasurementCalculator = () => {
                   <td>{row.col4.toFixed(2)}</td>
                   <td>{row.col5.toFixed(2)}</td>
                   <td>{row.col6.toFixed(2)}</td>
+                  <td>
+                    <button onClick={() => handleDelete(idx)} className="delete-btn">Delete</button>
+                  </td>
                 </tr>
               ))}
             </tbody>
