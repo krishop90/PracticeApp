@@ -94,8 +94,8 @@ const MeasurementCalculator = () => {
                   <td>{row.col1.toFixed(2)}</td>
                   <td>{row.col2.toFixed(2)}</td>
                   <td>{row.col3.toFixed(2)}</td>
-                  <td>{row.col4.toFixed(2)}</td>
                   <td>{row.col5.toFixed(2)}</td>
+                  <td>{row.col4.toFixed(2)}</td>
                   <td>{row.col6.toFixed(2)}</td>
                   <td>
                     <button onClick={() => handleDelete(idx)} className="delete-btn">Delete</button>
